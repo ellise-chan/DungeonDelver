@@ -31,7 +31,7 @@ public class TileCamera : MonoBehaviour
         // Read in the map data
         string[] lines = mapData.text.Split('\n'); 
         H = lines.Length;
-        string[] tileNums = lines[0].Split('');
+        string[] tileNums = lines[0].Split(' ');
         W = tileNums.Length;
         System.Globalization.NumberStyles hexNum; 
         hexNum = System.Globalization.NumberStyles.HexNumber;
@@ -40,7 +40,7 @@ public class TileCamera : MonoBehaviour
         MAP = new int[W, H];
         for (int j = 0; j < H; j++)
         {
-            tileNums = lines[j].Split('');
+            tileNums = lines[j].Split(' ');
             for (int i = 0; i < W; i++)
             {
                 if (tileNums[i] == "..")
