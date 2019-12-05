@@ -122,7 +122,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6573191}
   - component: {fileID: 6573190}
+  - component: {fileID: 6573194}
   - component: {fileID: 6573192}
+  - component: {fileID: 6573193}
   - component: {fileID: 6573189}
   m_Layer: 0
   m_Name: Main Camera
@@ -212,6 +214,34 @@ MonoBehaviour:
   mapCollisions: {fileID: 4900000, guid: 8c7dddc175b4444fa9bf2466a05b5324, type: 3}
   tilePrefab: {fileID: 954229994317829210, guid: c87434bdaf8ec284fbe082c4a95f0b22,
     type: 3}
+--- !u!114 &6573193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf814d533d1cec48af7fd14ed77a9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drayInRm: {fileID: 1501242171}
+  transTime: 0.5
+--- !u!114 &6573194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b8d99e06d734e4a80bb8f3adf3208a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keepInRoom: 0
+  gridMult: 1
 --- !u!1 &160540916
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +491,7 @@ MonoBehaviour:
   speed: 5
   attackDuration: 0.25
   attackDelay: 0.5
+  transitionDelay: 0.5
   dirHeld: -1
   facing: 1
   mode: 0
