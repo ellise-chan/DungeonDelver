@@ -123,9 +123,9 @@ GameObject:
   - component: {fileID: 6573191}
   - component: {fileID: 6573190}
   - component: {fileID: 6573194}
-  - component: {fileID: 6573192}
   - component: {fileID: 6573193}
   - component: {fileID: 6573189}
+  - component: {fileID: 6573192}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -177,7 +177,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
