@@ -24,7 +24,11 @@ public class Tile : MonoBehaviour
         gameObject.name = x.ToString("D3") + "x" + y.ToString("D3");
         if (eTileNum == -1)
         {
-            eTileNum = TileCamera.GET_MAP(x, y); 
+            eTileNum = TileCamera.GET_MAP(x, y);
+        }
+        else
+        {
+            TileCamera.SET_MAP(x, y, eTileNum); // Replace if non-default tileNum
         }
         tileNum = eTileNum;
         GetComponent<SpriteRenderer>().sprite = TileCamera.SPRITES[tileNum];
