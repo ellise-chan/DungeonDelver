@@ -174,6 +174,4 @@ public class TileCamera : MonoBehaviour
         }
         MAP[x, y] = tNum;
     }
-
-
 }
