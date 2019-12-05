@@ -177,7 +177,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -214,6 +214,8 @@ MonoBehaviour:
   mapCollisions: {fileID: 4900000, guid: 8c7dddc175b4444fa9bf2466a05b5324, type: 3}
   tilePrefab: {fileID: 954229994317829210, guid: c87434bdaf8ec284fbe082c4a95f0b22,
     type: 3}
+  defaultTileNum: 0
+  tileSwaps: []
 --- !u!114 &6573193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +565,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -890,11 +892,11 @@ GameObject:
   - component: {fileID: 1501242167}
   - component: {fileID: 1501242166}
   - component: {fileID: 1501242165}
-  - component: {fileID: 1501242169}
   - component: {fileID: 1501242168}
+  - component: {fileID: 1501242169}
   - component: {fileID: 1501242170}
-  - component: {fileID: 1501242171}
   - component: {fileID: 1501242172}
+  - component: {fileID: 1501242171}
   - component: {fileID: 1501242173}
   - component: {fileID: 1501242174}
   m_Layer: 0
@@ -1264,7 +1266,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -1407,6 +1409,16 @@ PrefabInstance:
     - target: {fileID: 4000010953457414, guid: c0a773a79706a44f19d02f6f29101480, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000013529916496, guid: c0a773a79706a44f19d02f6f29101480,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 164475853
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000013529916496, guid: c0a773a79706a44f19d02f6f29101480,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a773a79706a44f19d02f6f29101480, type: 3}

@@ -95,12 +95,14 @@ public class TileCamera : MonoBehaviour
                 {
                     Tile ti = Instantiate<Tile>(tilePrefab);
                     ti.transform.SetParent(TILE_ANCHOR);
-                    ti.SetTile(i, j); // c
+                    ti.SetTile(i, j); 
                     TILES[i, j] = ti;
                 }
             }
         }
-    }    void PrepareTileSwapDict()
+    }
+
+        void PrepareTileSwapDict()
     { 
         tileSwapDict = new Dictionary<int, TileSwap>();
         foreach (TileSwap ts in tileSwaps)
@@ -144,7 +146,9 @@ public class TileCamera : MonoBehaviour
         {
             SET_MAP(i, j, ts.overrideTileNum);
         }
-    }    static public int GET_MAP(int x, int y)
+    }
+
+    static public int GET_MAP(int x, int y)
     { 
         if (x < 0 || x >= W || y < 0 || y >= H)
         {
@@ -168,11 +172,5 @@ public class TileCamera : MonoBehaviour
             return; // Do not allow IndexOutOfRangeExceptions
         }
         MAP[x, y] = tNum;
-    }
-
-
-
-
-
-
+    }
 }
